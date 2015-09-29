@@ -1,0 +1,36 @@
+                     Homework 3 - Texture Mapping
+
+		       Chirag Chandrakant Salian
+
+=========================================================================
+
+Part 1 - Effect of modifications to texture mapping parameters
+
+Describe, in your own words, why the changes you made to the texture
+mapping parameters and texture coordinates produced the result image you
+submitted.
+
+So the changes I made are as follows,
+- glTextParamteri GL_Texture_Wrap_T as GL_Clamp
+- GL_TEXTURE_ENV_MODE to G_REPLACE to make the image clearer
+
+The coordinate position in the same order as they appeared to the following values,
+- glTexCoord2f(0.4,0.3)
+- glTexCoord2f(0.8,0.1)
+- glTexCoord2f(1.3,0.7)
+- glTexCoord2f(0.4,0.9)
+
+By setting GL_Texture_Wrap_T as GL_Clamp we can modify the top and bottom part of the 
+image to not repeat itself into tiles and instead stretch its version out.
+
+The coordinates position start from bottom-left then goes to bottom-right then to 
+top-right and finally to top-right. Since I wanted to move left side of the image more 
+right to crop the first man i had to edit the 1st and 4rth coodinate from (0.0,0.0) &
+(0.0,1.0) to (0.4,0.3) & (0.4,0.9). This also moved the coordinates slightly slower to 
+match the lining with the top part of the fishing pole.
+Then for the top-right I had to move the coordinate to (1.3,1.4) which moves to the area
+of the repeated tile to repeat the sunset in the texture. Finally I needed to move the 
+bottom right coordinate slightly higher and left otherwise the repeated tiles image 
+from the top-right would’ve spanned the entire height of the texture. Moving it to 
+(0.8,0.1) matched the desired texture more closely.
+

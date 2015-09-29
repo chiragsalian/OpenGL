@@ -1,0 +1,169 @@
+               Homework 1 - Evolution of Computer Graphics
+
+			Chirag Chandrakant Salian
+
+=========================================================================
+
+Part 1 - List of Video Segments Viewed
+
+If you are describing more than three segments, include descriptions of
+the other segments using the same format as the first three.
+
+-------------------------------------------------------------------------
+
+Segment 1
+   Segment title:		Pioneer 11 Encounters Saturn, NASA
+   Segment author(s):		James F Blinn, Bill Blume, 
+   				Robert E Holzman, Julian E Gomez
+   SIGGRAPH edition number:	#2
+   Year segment was produced:	1981
+
+Segment 2
+   Segment title:		Bingo
+   Segment author(s):		Alias | Wavefront
+   SIGGRAPH edition number:	#125
+   Year segment was produced:	1998
+
+Segment 3
+   Segment title:		World of Warcraft®: CataclysmTM Intro 
+   Segment author(s):		Marc Messenger - Blizzard Entertainment, Inc.
+   SIGGRAPH edition number:	#172
+   Year segment was produced:	2011
+
+=========================================================================
+
+Part 2 - Summary
+
+Write a two-page summary (roughly 120 to 140 lines)  which discusses
+the three (or more) video segments you watched.  Be sure to consider
+(at least) the following issues:
+
+	* What is the quality of the image - is it jagged, smooth, etc.?
+
+	* Is the image solid or wire-frame?
+
+	* Is the 3-D image a real 3-D or a faked one using 2-D?
+	  Support your answer (i.e., what clues did you use?).
+
+	* How is color used?
+
+	* Is there animation?
+
+	* How complex are the images?
+	
+	* How has computer graphics changed over the years represented
+	  here?
+
+-------------------------------------------------------------------------
+
+Segment 1
+
+	The first video watched is called Pioneer 11 Encounters Saturn. It is 
+a Computer Simulation of how saturn would look to us. The video is 
+interesting in many ways. Firstly it was an early attempt to use computer 
+graphics to help us visualize planets in our solar system. The video lacks
+a lot of detail which is why it may look smooth. Since it uses a lot of 
+tricks like image mapping instead of polygon shaping to achieve detail it 
+looks smooth to our perspective. Some examples to describe our earlier 
+discussion where - The asteroid belt is an image map rather than a polygon 
+construction of the model. This is noticed when the camera zooms closer to 
+the object. A bright star in the background is an image map of its bright 
+state as its state does change as the perspective changes. The objects shown 
+in the video are all solid since we cannot see through them. 
+	The animation consists of part 3D and 2D objects(with tricks). For example,
+the probe and the planet are constructed in 3D since they are clearly shown 
+rotating, but at the same time the heavenly objects in the background of the 
+scene may look like distant stars but they were created using a global background
+image map. This can be noticed since they always move equidistant to one another
+even while the perspective constantly changes. The color depth of the video 
+was really low. Even though video was set in space there seemed to be no black
+color levels. The video had an excessive amount of blue shading which was 
+strange. 
+	Strange things to note was that lighting techniques were probably not 
+implemented earlier that time. Since most of the objects were a lot brighter 
+than they should have been. For example, both sides of the probe was bright. 
+As it was rotating illumination on the probe was not affected at all, indicating 
+no dynamic lighting techniques. Also although half of saturn was dark, more 
+than 80% of the ring was bright. This was probably due to the fact that the 
+image mapped onto the planet for its texture was created with bright and dark 
+shades as a trick to compensate lack of lighting techniques which was once 
+again very interesting for it's time.
+	There is a good amount of animation. The basics of rotating, translation 
+and scaling can be seen here. The animation technique most likely used was 
+keyframing. The reasoning behind that is because it was more famous during 
+that time period rather than behavioural rules. Also on closer inspection, 
+the way the probes moves (i.e translating from one position and then abruptly 
+stopping without physics) indicates manual movement defined by the programmer 
+via keyframing. The images used for mapping are fairly simple. The idea for 
+its time to use a global image in the background instead of a plain color 
+like older videos was definitely a very interesting idea. Hence, paving the 
+way to the future of graphics industry tricks and techniques.
+
+-------------------------------------------------------------------------
+
+Segment 2
+
+	The second video chosen is Bingo. Also referred to as "Bingo! Bingo the 
+Clown-O!". The reason I choose this video is since it has fascinated me for 
+a long time. I will get to interesting features once I cover the basics. 
+The video uses more recent animations techniques and has hence improved over
+its predecessors in many facets. The animation quality is a lot smoother
+with a higher resolution than the previously compared video. The animation
+probably comprises of a few thousand polygon which improves the level of detail
+in the animation. The image is once again solid since we can't see though them.
+	Once again tricks have been used to used to reduce number of polygons used.
+For example, even thought the jump suit of the clown looks 3D its actually a 
+single 2D texture map. This can be noticed since the strap of the jump suit is 
+in the same 3D domain as the shirt. It also moves as once single entity with 
+respect to the clown devoid of any fabric physics. Either way, most of the 
+objects are 3D world objects which pushed the animation domain a lot further
+with the number of polygons created.
+	Construction of the human being has always been a challenge and will still 
+be for a few more years. The animation detail in this video gives rise to the 
+phycology issues concerned with creating an "almost-human" appearance. This 
+intern gave rise to the issue known as "uncanny valley" in computer graphics
+nowadays. People would always notice the imperfections of the human animation 
+which is why whenever they noticed Bingo the clown they would feel uncomfortable
+due to the "uncanny valley effect". Recent computer games and movie effects are 
+trying techniques to reduce the effect of uncanny valley so that people aren't 
+put off by the animation.
+	Colors are really vivid and the animation techniques are well done, bringing
+life to the imagination. Some technical improvements seen in animation industry
+can be noticed by the particle physics used. Smoke physics, dynamics shadows, 
+rope physics, diffusion of light(radiosity) on objects such as shirt and floor, 
+basic ray tracing to trace certain objects on the actors glasses etc are some 
+of the interesting animation techniques implemented.
+	
+-------------------------------------------------------------------------
+
+Segment 3
+
+	The third video chosen is the World of Warcraft's Cataclysm Intro.
+The animation segment pushes computer graphics to a whole new domain. Created
+by Blizzard Entertainment, they have always been known to push video game 
+graphics (well at-least their cutscenes) to the limits. The animation is 
+extremely detailed. The video is available in full 1080 resolution and the 
+colours are all in high detail. Each actor such as a dragon or ogre probably 
+has about a million polygons in its construction.
+	Almost every object noticeable is fully constructed in 3D. The animation
+is top-notch with everything moving as lifelike as possible. The dragon flies
+with the force of its heavy weight which is noticeable in the video. Metallic
+object hit and sound as hard as possible. Water moves fluidly thanks to water/
+fluid dynamic engines. Water, chain, smoke, fire, trees, wind, terrain all 
+have believable real world physics which make them look as amazing as possible.
+Material physics in air balloons, dragon wings, object shelters etc are also 
+implemented well.
+	Real time dynamic lighting created by objects, subsurface scattering of 
+textures(Where-in light diffuses individually on skin based on the amount of 
+light each area of the skin absorbs) are also noticeable on the ogre and dragon.
+The number of particles simulation has definitely come a very very long way since
+its predecessors and is definitely observable in this video. Rendering a scene like
+this a few years back would have probably taken... a few years.
+	The dynamics between the dragon interacting with the scene to create waves
+in the water and create a force to move buildings have been impressively 
+applied. Azeroth - the name of the dragon, looks amazingly believable and pushes
+computer graphics to a whole new level. It'll be interesting to see what else 
+the future holds for us and whats the next stage for computer graphics.
+
+=========================================================================
+

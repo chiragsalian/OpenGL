@@ -1,0 +1,78 @@
+Homework 2 - Projections
+
+			  By, CHIRAG CHANDRAKANT SALIAN
+
+=========================================================================
+
+Before answering each of the following questions, type the 'r' command in
+the tutorial program window to reset the function parameters to their
+original state.
+
+=========================================================================
+
+Part 1 - Orthographic Projection using glOrtho()
+
+Describe the changes you made to the gluLookAt() parameters to produce
+your Orthographic image:
+
+ANSWER
+The Orthographic image defined these basic parameters for the camera - left,
+right, bottom, top, near, far. These parameters defined the basic viewport for the camera.
+The gluLookAt values defined are as follows,
+gluLookAt(-0.30, 0.10, 2.40, -0.10, 0.00, 0.00, 0.30, 2.00, 1.50);
+
+-------------------------------------------------------------------------
+
+Part 2 - Frustum Projection using glFrustum()
+
+Describe the changes you made to the gluLookAt() parameters to produce
+your Frustum image:
+
+ANSWER
+The Frustum image defined these basic parameters for the camera - left,
+right, bottom, top, near, far. These parameters defined the basic viewport for the camera.
+The gluLookAt values defined are as follows,
+gluLookAt(-0.30, 0.10, 2.40, -0.10, 0.00, 0.00, 0.30, 2.00, 1.50);
+
+-------------------------------------------------------------------------
+
+Part 3 - Perspective Projection using gluPerspective()
+
+Describe the changes you made to the gluLookAt() parameters to produce
+your Perspective image:
+
+ANSWER
+The Perspective image defined these basic parameters for the camera - fovy, aspect, zNear
+zFar. These parameters defined the basic viewport for the camera.
+The gluLookAt values defined are as follows,
+gluLookAt(-0.30, 0.10, 2.40, -0.10, 0.00, 0.00, 0.30, 2.00, 1.50
+
+-------------------------------------------------------------------------
+
+Part 4 - Comparison of the three projection types
+
+Describe, in your own words, the differences between the three types of
+projections in terms of the overall effects (appearance, size, distortion,
+etc.) on the model.
+
+ANSWER
+The reason i have maintained the same gluLookAt for the three projection types was to
+observe differences while still keeping the view the same.
+After playing around with multiple values it feels like an evolution of projection systems
+wherein first orthographic projection was first made to observe our objects. But it didn't
+simulate a human eye since the aspect ratio of the start of the view is the same as the 
+aspect ratio of the end of the view. This in-turn removes any sense of depth in the 
+viewport. This way it would be hard to identify what objects are behind which one unless 
+they overlap one another.
+The frustum evolved to compensate on that. It simulates the human eye which includes a
+depth perception due to scaling aspect ratio on our viewport. Due to which the image looks
+smaller as we go far away. Whereas in the orthographic view that would not happen as we 
+go away form the object. This can be seen in our image as well. Even though the camera is 
+slightly lowered the head still looks as big as the body which shouldn't happen and its 
+supposed to appear smaller since its faster away.
+The perspective evolved further by defining easier initialisation variables. By having
+just 4 variables fovy, aspect, zNear and zFar it was possible to define all the important
+initialisation for the projection. Aspect scales evenly which is same as defining left and
+right in the earlier projection systems. The same can be said for the other variables as 
+well. As for appearance, perspective and Frutum are similar to one another.
+
